@@ -1,0 +1,16 @@
+@media only screen and (min-width: 1400px) {
+    .banner h1{
+        font-size: 160px;
+        line-height: 240px;
+    }
+    .banner .heading{
+        max-width: max-content;
+    }
+    .banner h2{
+        font-size: 40px;
+    }
+    .cart-hover-animation h2{
+        font-size: 100px;
+        line-height: 150px;
+    }
+  }
