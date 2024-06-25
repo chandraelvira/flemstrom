@@ -1,16 +1,209 @@
 @media only screen and (min-width: 1400px) {
-    .banner h1{
+    .banner h1 {
         font-size: 160px;
         line-height: 240px;
     }
-    .banner .heading{
+
+    .banner .heading {
         max-width: max-content;
     }
-    .banner h2{
+
+    .banner h2 {
         font-size: 40px;
     }
-    .cart-hover-animation h2{
-        font-size: 100px;
+
+    .cart-hover-animation h2 {
         line-height: 150px;
     }
-  }
+
+    .text-hover-animation {
+        height: 380px;
+    }
+
+    .video-frame video {
+        height: calc(100% - 141px);
+        width: calc(100% - 595px);
+    }
+
+    .parallax-box-sec h2 {
+        font-size: 100px;
+    }
+
+    h2.subtitle {
+        font-size: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .video-frame video {
+        height: calc(100% - 148px);
+        width: calc(100% - 259px);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .video-frame video {
+        height: calc(100% - 266px);
+        width: calc(100% - 194px);
+        transform: translate(-50%, 119px);
+
+    }
+
+    .banner h1 {
+        font-size: 65px;
+        line-height: 78px;
+    }
+
+    .cart-hover-animation h2 {
+        font-size: 60px;
+    }
+
+    .cart-hover-animation .card-bx-two {
+        margin-top: 60vh;
+    }
+
+    .cart-hover-animation .card-bx-three {
+        margin-top: 100vh;
+    }
+
+    h2.subtitle {
+        font-size: 60px;
+        line-height: 95px;
+    }
+
+    .faq-section .faq-header::before {
+        width: calc(100% - 0px);
+    }
+
+    footer .contact span,
+    footer .contact a {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .video-frame {
+        height: 300px;
+    }
+
+    .video-frame video {
+        height: calc(100% - 65px);
+        width: calc(100% - 154px);
+        transform: translate(-50%, 27px);
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .banner .sub-content {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px 0;
+    }
+
+    .banner h1 {
+        font-size: 34px;
+        line-height: 44px;
+    }
+
+    .banner h2 {
+        line-height: 42px;
+        font-size: 16px;
+    }
+
+    .banner .sub-content p {
+        font-size: 18px;
+    }
+
+    h2.subtitle {
+        font-size: 28px !important;
+        line-height: 43px !important;
+    }
+
+    .text-hover-animation {
+        padding: 10px 0;
+        height: auto;
+    }
+
+    .video-frame {
+        height: 180px;
+    }
+
+    .video-frame video {
+        height: 138px;
+        width: 215px;
+        transform: translate(-50%, 16px);
+    }
+
+    .p-bottom {
+        padding-bottom: 20px;
+    }
+
+    .p-top {
+        padding-top: 20px;
+    }
+
+    button#playPauseBtn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .cart-hover-animation .card-bx h3 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    .faq-section .faq-header h3 {
+        font-size: 26px;
+        line-height: 41px;
+    }
+
+    .parallax-box-sec .parallax-item h5 {
+        font-size: 22px;
+    }
+
+    .parallax-box-sec .parallax-item p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .slide-section .comp-logo img {
+        max-width: 45px;
+    }
+
+    .accordion .accordion-button {
+        font-size: 16px;
+    }
+
+    .accordion .accordion-button {
+        font-size: 14px;
+    }
+
+    footer h2 {
+        font-size: 41px;
+        line-height: 52px;
+    }
+
+    .animate-btn,
+    .alternate-btn {
+        font-size: 16px;
+        padding: 8px 30px;
+    }
+
+    footer .contact img {
+        margin-right: 10px;
+        max-width: 16px;
+    }
+
+    footer .social-wrap {
+        justify-content: center;
+    }
+
+    footer p {
+        font-size: 16px;
+        width: 100%;
+    }
+}

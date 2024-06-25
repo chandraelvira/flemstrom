@@ -19,19 +19,24 @@ $(".brand-slide").owlCarousel({
   autoplayHoverPause: false,
   responsive: {
     0: {
-      items: 1,
-    },
-    600: {
+      autoplay: true,
       items: 3,
     },
+    600: {
+      autoplay: true,
+      items: 4,
+    },
     1000: {
+      autoplay: true,
       items: 5,
     },
     1320: {
-      items: 4,
+      autoplay: true,
+      items: 6,
     },
     1600: {
-      items: 5,
+      autoplay: true,
+      items: 6,
     },
   },
 });
@@ -80,53 +85,27 @@ window.addEventListener("scroll", () => {
 });
 // Subcontent
 
-// Heading-three
-// const headingThree = document.querySelector('.h-three');
-// const scrollFrom = 1100;
-// const scrollTo = 1500;
+const hThree = document.querySelector('.h-three');
+const hFour = document.querySelector('.h-four');
 
-// window.addEventListener('scroll', () => {
-//     const scrollPos = window.scrollY;
-//     if (scrollPos >= scrollFrom && scrollPos <= scrollTo) {
-//         headingThree.style.transform = `translate3d(0, ${-scrollPos * 0.1}px, 0)`;
-//     } else {
-//         headingThree.style.transform = 'none';
-//     }
-// });
-// Heading-three
-
-
-// Heading-four
-const headingFour = document.querySelector('.h-four');
-const fourscrollFrom = 1100;
-const fourscrollTo = 1500;
-window.addEventListener('scroll', () => {
-    const scrollPos = window.scrollY;
-    if (scrollPos >= fourscrollFrom && scrollPos <= fourscrollTo) {
-        const translateY = (scrollPos - fourscrollFrom) * 0.1;
-
-        headingFour.style.transform = `translate3d(0, ${translateY}px, 0)`;
-    } else {
-        headingFour.style.transform = 'none';
-    }
-});
-
-// Heading-four
-
-
-
-const headingThree = document.querySelector('.h-three');
-const scrollFrom = 1100;
-const scrollTo = 1500;
+let lastScrollTop = 0;
 
 window.addEventListener('scroll', () => {
-    const scrollPos = window.scrollY;
-    if (scrollPos >= scrollFrom && scrollPos <= scrollTo) {
-        // Calculate the percentage of scroll within the defined range
-        const progress = (scrollPos - scrollFrom) / (scrollTo - scrollFrom);
-        // Move the element from top to bottom based on the progress
-        headingThree.style.transform = `translate3d(0, ${progress * 100}px, 0)`;
-    } else {
-        headingThree.style.transform = 'none';
-    }
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const scrollDirection = scrollTop > lastScrollTop? 'down' : 'up';
+
+  if (scrollDirection === 'down') {
+    hThree.style.transform = 'translateY(0px)';
+    hFour.style.transform = 'translateY(0px)';
+  } else {
+    hThree.style.transform = 'translateY(-130px)';
+    hFour.style.transform = 'translateY(161px)';
+  }
+
+  lastScrollTop = scrollTop;
 });
+
+hThree.style.transition = 'transform 0.5s ease-in-out';
+hFour.style.transition = 'transform 0.5s ease-in-out';
+
+

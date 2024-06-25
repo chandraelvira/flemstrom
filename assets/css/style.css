@@ -60,10 +60,34 @@ header {
 }
 
 header .humburger {
-    max-width: 40px;
-    transform: rotate(73deg);
+    width: 30px;
+    height: 30px;
+    position: relative;
 }
-
+header .humburger .round-shape{
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    display: inline-block;
+    border-radius: 100%;
+    position: absolute;
+}
+.round-one{
+    top: 0;
+    left: 0;
+}
+.round-two{
+    top: 0;
+    right: 0;
+}
+.round-three{
+    bottom: 0;
+    left: 0;
+}
+.round-four{
+    bottom: 0;
+    right: 0;
+}
 header nav {
     display: flex;
     align-items: center;
@@ -178,10 +202,8 @@ header a.white-log {
     display: inline-block;
     z-index: 1;
     text-transform: uppercase;
+    text-wrap: nowrap;
 }
-
-
-
 
 .alternate-btn::before {
     content: '';
@@ -206,20 +228,16 @@ header a.white-log {
         background-color: var(--theme-color);
         width: 77px;
     }
-
     50% {
         background-color: var(--theme-color);
         width: calc(100% + 20px);
     }
-
     100% {
         background-color: var(--theme-color);
         width: 100%;
     }
 }
-
 /* Alternate-animate-btn */
-
 .animate-btn i {
     transform: translateX(10px);
     transition: transform 0.5s ease-in-out;
@@ -228,7 +246,6 @@ header a.white-log {
 .animate-btn:hover i {
     transform: translateX(15px);
 }
-
 .animate-btn {
     color: #fff;
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -242,11 +259,8 @@ header a.white-log {
     display: inline-block;
     z-index: 1;
     text-transform: uppercase;
+    text-wrap: nowrap;
 }
-
-
-
-
 .animate-btn::before {
     content: '';
     background-color: #0D1220;
@@ -302,7 +316,7 @@ header a.white-log {
 .btn-bx {
     flex: 1;
     padding-right: 40px;
-
+    white-space: nowrap;
 }
 
 /*Banner======end*/
@@ -311,7 +325,7 @@ header a.white-log {
 }
 
 .slide-section .comp-logo img {
-    max-width: 150px;
+    max-width: 75px;
 }
 
 .video-frame {
@@ -382,8 +396,12 @@ button#playPauseBtn {
 
 .cart-hover-animation .card-bx {
     background-color: var(--theme-color);
-    padding: 20px 15px;
+    padding: 40px 20px;
     min-height: 367px;
+}
+.cart-hover-animation .card-bx > img{
+    display: block;
+    margin-bottom: 30px; 
 }
 .cart-hover-animation .bx-unic{
     position: -webkit-sticky;
@@ -402,6 +420,7 @@ button#playPauseBtn {
     font-weight: 400;
     line-height: 60px;
     color: var(--dark);
+    margin-bottom: 20px;
 }
 
 .cart-hover-animation .card-bx p {
@@ -437,6 +456,7 @@ button#playPauseBtn {
 .text-hover-animation {
     overflow: hidden;
     padding: 40px 0;
+    height: 300px;
 }
 
 /* parallax-box=====start*/
@@ -458,6 +478,10 @@ button#playPauseBtn {
     align-items: center;
     flex-direction: column;
     padding: 60px 15px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .parallax-box-sec .parallax-item h5 {
@@ -689,6 +713,4 @@ footer .footer-copy-right {
 footer .contact {
     margin-top: 40px;
 }
-
 /*Footer-end=====*/
-
