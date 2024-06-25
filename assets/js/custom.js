@@ -1,9 +1,8 @@
-// $(document).ready(function () {
-//   $(".mobile-toggle").click(function () {
-//     $(".mobile-toggle").toggleClass("menu-open");
-//     $(".open-in-mobile").toggleClass("active");
-//   });
-// });
+$(document).ready(function () {
+  $(".humburger").click(function () {
+    $(".humburger").toggleClass("menu-open");
+    // $(".open-in-mobile").toggleClass("active");
+  });
 
 $(".brand-slide").owlCarousel({
   loop: true,
@@ -39,6 +38,7 @@ $(".brand-slide").owlCarousel({
       items: 6,
     },
   },
+});
 });
 
 // Video play-pause
@@ -85,6 +85,8 @@ window.addEventListener("scroll", () => {
 });
 // Subcontent
 
+// Heading-three $ four
+
 const hThree = document.querySelector('.h-three');
 const hFour = document.querySelector('.h-four');
 
@@ -98,8 +100,8 @@ window.addEventListener('scroll', () => {
     hThree.style.transform = 'translateY(0px)';
     hFour.style.transform = 'translateY(0px)';
   } else {
-    hThree.style.transform = 'translateY(-130px)';
-    hFour.style.transform = 'translateY(161px)';
+    hThree.style.transform = 'translateY(-170px)';
+    hFour.style.transform = 'translateY(190px)';
   }
 
   lastScrollTop = scrollTop;
@@ -107,5 +109,4 @@ window.addEventListener('scroll', () => {
 
 hThree.style.transition = 'transform 0.5s ease-in-out';
 hFour.style.transition = 'transform 0.5s ease-in-out';
-
 

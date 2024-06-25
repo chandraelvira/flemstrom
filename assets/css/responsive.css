@@ -32,6 +32,9 @@
     h2.subtitle {
         font-size: 100px;
     }
+    .faq-section .faq-header::before {
+        background: linear-gradient(180deg, rgba(13, 18, 32, 1) 29%, rgba(255, 218, 45, 1) 29%);
+    }
 
 }
 
@@ -39,6 +42,9 @@
     .video-frame video {
         height: calc(100% - 148px);
         width: calc(100% - 259px);
+    }
+    .faq-section .faq-header h3 {
+        font-size: 44px;
     }
 }
 
