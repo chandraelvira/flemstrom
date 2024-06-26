@@ -433,7 +433,7 @@ header .nav-list::after {
     background-color: #0D1220;
 }
 
-.slide-section .comp-logo img {
+ .comp-logo img {
     max-width: 75px;
     aspect-ratio: 10 / 6;
 }
@@ -507,7 +507,7 @@ h2 .subtilehover:hover {
 .cart-hover-animation .card-bx {
     background-color: var(--theme-color);
     padding: 40px 20px;
-    min-height: 367px;
+    min-height: 470px;
 }
 
 .cart-hover-animation .card-bx>img {
@@ -542,7 +542,7 @@ h2 .subtilehover:hover {
     font-size: 16px;
     font-weight: 500;
     color: var(--dark);
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 /*cart-hover-animation====*/
@@ -896,3 +896,10 @@ margin-bottom: 30px;
     margin-left: auto;
 }
 /*About-us-end=====*/
+#about-01,
+#about02{
+    transition: transform 0.5s ease-in-out;
+}
+.about-text-animation{
+    overflow: hidden;
+}
