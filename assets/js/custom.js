@@ -173,15 +173,5 @@ $(document).ready(function () {
 });
 // same-height
 
-$(function () {
-  $(document).on("click", ".mobile-navbar", function () {
-    $("nav").toggleClass("active");
-   
-  });
-  // Click event for the body
-  $("body").click(function (event) {
-    if (!$(event.target).closest("header").length) {
-      $("nav").removeClass("active");
-    }
-  });
-});
+
+
