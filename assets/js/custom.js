@@ -4,41 +4,41 @@ $(document).ready(function () {
     // $(".open-in-mobile").toggleClass("active");
   });
 
-$(".brand-slide").owlCarousel({
-  loop: true,
-  margin: 15,
-  nav: false,
-  rtl: false,
-  dots: false,
-  autoplay: true,
-  slideTransition: "linear",
-  autoplayTimeout: 3000,
-  autoplayHoverPause: true,
-  autoplaySpeed: 3000,
-  autoplayHoverPause: false,
-  responsive: {
-    0: {
-      autoplay: true,
-      items: 3,
+  $(".brand-slide").owlCarousel({
+    loop: true,
+    margin: 15,
+    nav: false,
+    rtl: false,
+    dots: false,
+    autoplay: true,
+    slideTransition: "linear",
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    autoplaySpeed: 3000,
+    autoplayHoverPause: false,
+    responsive: {
+      0: {
+        autoplay: true,
+        items: 3,
+      },
+      600: {
+        autoplay: true,
+        items: 4,
+      },
+      1000: {
+        autoplay: true,
+        items: 5,
+      },
+      1320: {
+        autoplay: true,
+        items: 6,
+      },
+      1600: {
+        autoplay: true,
+        items: 6,
+      },
     },
-    600: {
-      autoplay: true,
-      items: 4,
-    },
-    1000: {
-      autoplay: true,
-      items: 5,
-    },
-    1320: {
-      autoplay: true,
-      items: 6,
-    },
-    1600: {
-      autoplay: true,
-      items: 6,
-    },
-  },
-});
+  });
 });
 
 // Video play-pause
@@ -110,70 +110,78 @@ window.addEventListener("scroll", () => {
 // hThree.style.transition = 'transform 0.5s ease-in-out';
 // hFour.style.transition = 'transform 0.5s ease-in-out';
 
-
-$(document).ready(function() {
-  const $hThree = $('.h-three');
-  const $hFour = $('.h-four');
+$(document).ready(function () {
+  const $hThree = $(".h-three");
+  const $hFour = $(".h-four");
   let lastScrollTop = 0;
-  $(window).on('scroll', function() {
-      const scrollTop = $(this).scrollTop();
-      const scrollDirection = scrollTop > lastScrollTop ? 'down' : 'up';
+  $(window).on("scroll", function () {
+    const scrollTop = $(this).scrollTop();
+    const scrollDirection = scrollTop > lastScrollTop ? "down" : "up";
 
-      if (scrollDirection === 'down') {
-          $hThree.css('transform', 'translateY(0px)');
-          $hFour.css('transform', 'translateY(0px)');
-      } else {
-          $hThree.css('transform', 'translateY(-170px)');
-          $hFour.css('transform', 'translateY(190px)');
-      }
+    if (scrollDirection === "down") {
+      $hThree.css("transform", "translateY(0px)");
+      $hFour.css("transform", "translateY(0px)");
+    } else {
+      $hThree.css("transform", "translateY(-170px)");
+      $hFour.css("transform", "translateY(190px)");
+    }
 
-      lastScrollTop = scrollTop;
+    lastScrollTop = scrollTop;
   });
 
-  $hThree.css('transition', 'transform 0.5s ease-in-out');
-  $hFour.css('transition', 'transform 0.5s ease-in-out');
-});
-
-
-// About-page-animation
-$(document).ready(function() {
-  const $about01 = $('#about-01');
-  const $about02 = $('#about02');
-  let lastScrollTop = 0;
-
-  $(window).on('scroll', function() {
-      const scrollTop = $(this).scrollTop();
-      const scrollDirection = scrollTop > lastScrollTop ? 'down' : 'up';
-
-      if (scrollDirection === 'down') {
-          $about01.css('transform', 'translateY(0px)');
-          $about02.css('transform', 'translateY(0px)');
-      } else {
-          $about01.css('transform', 'translateY(-170px)');
-          $about02.css('transform', 'translateY(190px)');
-      }
-
-      lastScrollTop = scrollTop;
-  });
-
-  $about01.css('transition', 'transform 0.5s ease-in-out');
-  $about02.css('transition', 'transform 0.5s ease-in-out');
+  $hThree.css("transition", "transform 0.5s ease-in-out");
+  $hFour.css("transition", "transform 0.5s ease-in-out");
 });
 
 // About-page-animation
+$(document).ready(function () {
+  const $about01 = $("#about-01");
+  const $about02 = $("#about02");
+  let lastScrollTop = 0;
 
+  $(window).on("scroll", function () {
+    const scrollTop = $(this).scrollTop();
+    const scrollDirection = scrollTop > lastScrollTop ? "down" : "up";
+
+    if (scrollDirection === "down") {
+      $about01.css("transform", "translateY(0px)");
+      $about02.css("transform", "translateY(0px)");
+    } else {
+      $about01.css("transform", "translateY(-170px)");
+      $about02.css("transform", "translateY(190px)");
+    }
+
+    lastScrollTop = scrollTop;
+  });
+
+  $about01.css("transition", "transform 0.5s ease-in-out");
+  $about02.css("transition", "transform 0.5s ease-in-out");
+});
+
+// About-page-animation
 
 // same-height
 
-$(document).ready(function(){
-
+$(document).ready(function () {
   var highestBox = 0;
-      $('.stage-card .slide-card').each(function(){  
-              if($(this).height() > highestBox){  
-              highestBox = $(this).height();  
-      }
-  });    
-  $('.stage-card .slide-card').height(highestBox);
-
+  $(".stage-card .slide-card").each(function () {
+    if ($(this).height() > highestBox) {
+      highestBox = $(this).height();
+    }
+  });
+  $(".stage-card .slide-card").height(highestBox);
 });
 // same-height
+
+$(function () {
+  $(document).on("click", ".mobile-navbar", function () {
+    $("nav").toggleClass("active");
+   
+  });
+  // Click event for the body
+  $("body").click(function (event) {
+    if (!$(event.target).closest("header").length) {
+      $("nav").removeClass("active");
+    }
+  });
+});
