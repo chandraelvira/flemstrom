@@ -50,8 +50,8 @@
         line-height: 155px;
     }
     .price-slide h2{
-        font-size: 130px;
-        letter-spacing: 26px;
+        font-size: 100px;
+        letter-spacing: 24px;
     }
 }
 
@@ -139,6 +139,37 @@
         height: calc(100% - 65px);
         width: calc(100% - 154px);
         transform: translate(-50%, 27px);
+    }
+    .price-slide h2{
+        writing-mode: unset;
+        transform: rotate(0deg);
+        line-height: 70px;
+        font-size: 60px;
+
+    }
+    .price-slide .animate-p-bx {
+        top: 45vh;
+    }
+    .price-slide .rtl-text h2 span:nth-child(1) {
+        transform: translateX(600px);
+    }
+    .price-slide .rtl-text h2 span:nth-child(2) {
+        transform: translateX(600px);
+    }
+    .price-slide .rtl-text h2 span:nth-child(3) {
+        transform: translateX(600px);
+    }
+    .price-slide .rtl-text h2 span:nth-child(4) {
+        transform: translateX(600px);
+    }
+    .price-slide .rtl-text h2 span:nth-child(5) {
+        transform: translateX(600px);
+    }
+    .price-slide .rtl-text h2 span:nth-child(6) {
+        transform: translateX(600px);
+    }
+    .price-slide .rtl-text.rtl-animation h2 span {
+        transform: none;
     }
 }
 
