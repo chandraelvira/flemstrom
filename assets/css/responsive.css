@@ -61,6 +61,11 @@
     .faq-section .faq-header h3 {
         font-size: 44px;
     }
+
+    .about-us-header.banner h1 {
+        font-size: 100px;
+        line-height: 155px;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -75,7 +80,13 @@
         font-size: 65px;
         line-height: 78px;
     }
-    .splash-screen .text-heading h1{
+
+    .about-us-header.banner h1 {
+        font-size: 65px;
+        line-height: 84px;
+    }
+
+    .splash-screen .text-heading h1 {
         font-size: 65px;
     }
 
@@ -229,5 +240,16 @@
     footer p {
         font-size: 16px;
         width: 100%;
+    }
+
+    .about-us-header.banner h1 {
+        font-size: 34px;
+        line-height: 44px;
+    }
+    .grundare-pro .pro-content h3 {
+        font-size: 28px;
+    }
+    header .nav-list li a{
+        font-size: 36px;
     }
 }

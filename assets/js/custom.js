@@ -162,15 +162,15 @@ $(document).ready(function () {
 
 // same-height
 
-$(document).ready(function () {
-  var highestBox = 0;
-  $(".stage-card .slide-card").each(function () {
-    if ($(this).height() > highestBox) {
-      highestBox = $(this).height();
-    }
-  });
-  $(".stage-card .slide-card").height(highestBox);
-});
+// $(document).ready(function () {
+//   var highestBox = 0;
+//   $(".stage-card .slide-card").each(function () {
+//     if ($(this).height() > highestBox) {
+//       highestBox = $(this).height();
+//     }
+//   });
+//   $(".stage-card .slide-card").height(highestBox);
+// });
 // same-height
 
 
