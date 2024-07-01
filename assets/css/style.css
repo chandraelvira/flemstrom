@@ -177,38 +177,45 @@ header .nav-list li a:hover {
     text-shadow: 4px 4px 0 #fff;
 }
 
-header .nav-list li:nth-child(1) a{
+header .nav-list li:nth-child(1) a {
     transform: translateY(-100%);
     animation: listchildOne 0.5s ease-out 1.4s 1 forwards;
 }
-header .nav-list li:nth-child(2) a{
-    transform: translateY(-100%);
-    animation: listchildOne 0.5s  ease-out 1.5s 1 forwards;
-}
-header .nav-list li:nth-child(3) a{
-    transform: translateY(-100%);
-    animation: listchildOne 0.5s  ease-out 1.5s 1 forwards;
-}
-header .nav-list li:nth-child(4) a{
-    transform: translateY(-100%);
-    animation: listchildOne 0.5s  ease-out 1.4s 1 forwards;
-}
-header .nav-list li:nth-child(5) a{
+
+header .nav-list li:nth-child(2) a {
     transform: translateY(-100%);
     animation: listchildOne 0.5s ease-out 1.5s 1 forwards;
 }
+
+header .nav-list li:nth-child(3) a {
+    transform: translateY(-100%);
+    animation: listchildOne 0.5s ease-out 1.5s 1 forwards;
+}
+
+header .nav-list li:nth-child(4) a {
+    transform: translateY(-100%);
+    animation: listchildOne 0.5s ease-out 1.4s 1 forwards;
+}
+
+header .nav-list li:nth-child(5) a {
+    transform: translateY(-100%);
+    animation: listchildOne 0.5s ease-out 1.5s 1 forwards;
+}
+
 @keyframes listchildOne {
     0% {
         transform: translateY(-100%);
     }
-    25%{
+
+    25% {
         transform: translateY(-75%);
     }
 
     50% {
         transform: translateY(-50%);
     }
-    75%{
+
+    75% {
         transform: translateY(-25%);
     }
 
@@ -247,6 +254,7 @@ header .nav-list:before {
     transform: translateY(-50%);
     transition: all 1.5s ease-in;
 }
+
 header .menu-open .nav-list:before {
     height: 0%;
     animation-name: beforeBg;
@@ -256,27 +264,30 @@ header .menu-open .nav-list:before {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
-    
+
 }
 
-@keyframes beforeBg{
-    0%{
-       height: 0%;
+@keyframes beforeBg {
+    0% {
+        height: 0%;
 
     }
-    10%{
+
+    10% {
         height: 2%;
-     }
-     20%{
+    }
+
+    20% {
         height: 4%;
-     }
-    100%{
-     height: 100%;
+    }
+
+    100% {
+        height: 100%;
     }
 }
 
 /* Navbar*/
-header .humburger.menu-open .icon{
+header .humburger.menu-open .icon {
     transform: rotate(-180deg);
 }
 
@@ -1024,7 +1035,8 @@ footer .contact {
     position: relative;
     height: 100%;
 }
-.stage-card .slide-card span{
+
+.stage-card .slide-card span {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -1035,11 +1047,13 @@ footer .contact {
     padding: 10px 10px;
     text-transform: uppercase;
 }
-.stage-card .slide-card img{
+
+.stage-card .slide-card img {
     display: block;
     margin-bottom: 30px;
 }
-.stage-card .slide-card h3{
+
+.stage-card .slide-card h3 {
     color: var(--theme-color);
     font-size: 40px;
     font-weight: 400;
@@ -1047,35 +1061,40 @@ footer .contact {
     font-family: "Anton", sans-serif;
     margin-bottom: 20px;
 }
-.stage-card .slide-card p{
+
+.stage-card .slide-card p {
     color: #fff;
     font-size: 16px;
     font-weight: 500;
     line-height: 30px;
 }
-.stage-card  .sticky-slide{
+
+.stage-card .sticky-slide {
     position: -webkit-sticky;
     position: sticky;
     top: 15vh;
 }
 
-.stage-card   .slide-card_two{
+.stage-card .slide-card_two {
     margin-top: 30vh;
 }
-.stage-card  .slide-card_three{
+
+.stage-card .slide-card_three {
     margin-top: 60vh;
 }
-.how-it-work-banner .bnr-btn{
+
+.how-it-work-banner .bnr-btn {
     margin-top: 60px;
 }
+
 /*how-dose-it-work-end=====*/
 
 /*it-work-vid-sec-Start=====*/
-.it-work-vid-sec{
-background-color: #0D1220;  
+.it-work-vid-sec {
+    background-color: #0D1220;
 }
 
-.vid-sec-btm-bx{
+.vid-sec-btm-bx {
     background-color: var(--theme-color);
     padding: 0 30px;
     height: 450px;
@@ -1083,24 +1102,29 @@ background-color: #0D1220;
     align-items: center;
     margin-top: -210px;
 }
+
 .vid-sec-btm-bx .text-bx {
     background-color: #000;
     text-align: center;
 }
-.vid-sec-btm-bx strong{
+
+.vid-sec-btm-bx strong {
     color: var(--theme-color);
     font-family: "Anton", sans-serif;
     font-size: 40px;
     font-weight: 400;
     line-height: 60px;
 }
-.vid-sec-btm-bx .w-100{
+
+.vid-sec-btm-bx .w-100 {
     padding-top: 190px;
 }
-.vid-sec-btm-bx .vid-sec-btn{
+
+.vid-sec-btm-bx .vid-sec-btn {
     text-align: center;
     padding-top: 60px;
 }
+
 /*it-work-vid-sec-End=====*/
 /* splash screen====Start*/
 .splash-screen {
@@ -1116,13 +1140,15 @@ background-color: #0D1220;
     position: relative;
     overflow-x: hidden;
 }
-.splash-screen .speen-wheel{
+
+.splash-screen .speen-wheel {
     position: absolute;
     top: 50%;
     right: -30px;
     transform: translateY(calc(-50% - -50px));
 }
-.splash-screen .speen-wheel img{
+
+.splash-screen .speen-wheel img {
     max-width: 250px;
     animation: rotate 2s linear infinite;
 }
@@ -1131,19 +1157,23 @@ background-color: #0D1220;
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
 }
-.splash-screen .vid-cut{
+
+.splash-screen .vid-cut {
     position: absolute;
     top: 50%;
     right: 90px;
     transform: translateY(calc(-50% - 40px));
 }
-.splash-screen .vid-cut img{
+
+.splash-screen .vid-cut img {
     max-width: 300px;
 }
+
 .splash-screen .text-heading h1 {
     font-family: "Anton", sans-serif;
     font-size: 100px;
@@ -1213,10 +1243,66 @@ background-color: #0D1220;
     justify-content: center;
     line-height: normal;
 }
+
 .splash-screen ul li .lan-sel a {
     color: #fff;
 }
+
 .splash-screen ul li .lan-sel img {
     margin-right: 11px;
 }
+
 /* splash screen====End*/
+
+/* Pricing-Section====Start*/
+.sm-banner {
+    background-color: var(--theme-color);
+    padding-top: 76px;
+}
+
+.sm-banner .h-container {
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.sm-banner h1 {
+    font-family: "Anton", sans-serif;
+    font-size: 100px;
+    line-height: 124px;
+    display: inline-block;
+}
+
+.sm-banner p {
+    max-width: 786px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    width: 100%;
+}
+
+.price-slide {
+    background-color: var(--black);
+}
+
+.price-slide h2 {
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--theme-color);
+    transition: text-shadow .3s;
+    font-size: 160px;
+    font-family: "Anton", sans-serif;
+    line-height: 240px;
+    font-weight: 400;
+    writing-mode: vertical-rl;
+    letter-spacing: 30px;
+    transform: rotate(180deg);
+}
+
+.price-slide h2:hover {
+    text-shadow: 4px 4px var(--theme-color);
+}
+.price-slide .price-bx{
+background-color: var(--theme-color);
+
+}
+/*Pricing-Section====End*/

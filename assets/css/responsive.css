@@ -49,6 +49,10 @@
         font-size: 130px;
         line-height: 155px;
     }
+    .price-slide h2{
+        font-size: 130px;
+        letter-spacing: 26px;
+    }
 }
 
 
@@ -114,6 +118,15 @@
     footer .contact span,
     footer .contact a {
         font-size: 16px;
+    }
+
+    .how-it-work-banner h1 {
+        font-size: 65px;
+        line-height: 84px;
+    }
+
+    .how-it-work-banner .h-container .h-two {
+        flex-direction: column;
     }
 }
 
@@ -246,10 +259,21 @@
         font-size: 34px;
         line-height: 44px;
     }
+
     .grundare-pro .pro-content h3 {
         font-size: 28px;
     }
-    header .nav-list li a{
+
+    header .nav-list li a {
         font-size: 36px;
+    }
+
+    .how-it-work-banner h1 {
+        font-size: 34px;
+        line-height: 44px;
+    }
+
+    .how-it-work-banner .h-container p {
+        font-size: 18px;
     }
 }
