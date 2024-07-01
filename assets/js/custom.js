@@ -81,7 +81,10 @@ const subContent = document.querySelector(".sub-content");
 
 window.addEventListener("scroll", () => {
   const scrollPos = window.scrollY;
-  subContent.style.transform = `translate3d(0, ${scrollPos * 0.6}px, 0)`; // Reverse the direction
+
+  if (subContent != null) {
+    subContent.style.transform = `translate3d(0, ${scrollPos * 0.6}px, 0)`;
+  }
 });
 // Subcontent
 
@@ -175,3 +178,23 @@ $(document).ready(function () {
 
 
 
+$(document).ready(function () {
+  let lastScrollTop = 0;
+  $(window).on('scroll', function () {
+      let currentScrollTop = $(this).scrollTop();
+      let section2 = $('#price-slide-animation');
+      let sectionOffset = section2.offset().top;
+      let sectionHeight = section2.outerHeight();
+
+      if (currentScrollTop >= sectionOffset && currentScrollTop < sectionOffset + sectionHeight) {
+          if (currentScrollTop > lastScrollTop) {
+              section2.find('.rtl-text').addClass('rtl-animation');
+          } else {
+              section2.find('.rtl-text').removeClass('rtl-animation');
+          }
+      } else {
+          section2.find('.rtl-text').removeClass('rtl-animation');
+      }
+      lastScrollTop = currentScrollTop;
+  });
+});

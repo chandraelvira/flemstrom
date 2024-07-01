@@ -1262,7 +1262,7 @@ footer .contact {
 
 .sm-banner .h-container {
     overflow: hidden;
-    padding: 50px 0;
+    padding: 70px 0;
 }
 
 .sm-banner h1 {
@@ -1283,7 +1283,12 @@ footer .contact {
 .price-slide {
     background-color: var(--black);
 }
-
+.price-slide .rtl-text_1{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15vh;
+    overflow: hidden;
+}
 .price-slide h2 {
     color: rgba(0, 0, 0, 0);
     -webkit-text-stroke-width: 2px;
@@ -1296,6 +1301,35 @@ footer .contact {
     writing-mode: vertical-rl;
     letter-spacing: 30px;
     transform: rotate(180deg);
+    display: flex;
+}
+
+.price-slide .rtl-text h2 span:nth-child(1) {
+    transform: translateX(300px);
+    transition: transform 0.6s ease-out;
+}
+.price-slide .rtl-text h2 span:nth-child(2) {
+    transform: translateX(300px);
+    transition: transform 0.5s ease-out;
+}
+.price-slide .rtl-text h2 span:nth-child(3) {
+    transform: translateX(300px);
+    transition: transform 0.4s ease-out;
+}
+.price-slide .rtl-text h2 span:nth-child(4) {
+    transform: translateX(300px);
+    transition: transform 0.3s ease-out;
+}
+.price-slide .rtl-text h2 span:nth-child(5) {
+    transform: translateX(300px);
+    transition: transform 0.2s ease-out;
+}
+.price-slide .rtl-text h2 span:nth-child(6) {
+    transform: translateX(300px);
+    transition: transform 0.1s ease-in;
+}
+.price-slide .rtl-text.rtl-animation h2 span{
+    transform: none;
 }
 
 .price-slide h2:hover {
@@ -1303,6 +1337,83 @@ footer .contact {
 }
 .price-slide .price-bx{
 background-color: var(--theme-color);
-
+color: var(--black);
+padding: 40px 20px;
 }
+.price-slide .price-bx span{
+    margin-left: auto;
+    display: table;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--black);
+    padding: 8px 20px
+}
+.price-slide .price-bx strong{
+    display: block;
+    font-family: "Anton", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 10px;
+}
+.price-slide .price-bx h5{
+    display: block;
+    font-family: "Anton", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 60px;
+}
+.price-slide .price-bx h6{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: var(--black);
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.price-slide .price-bx ul{
+    margin : 20px 0;
+}
+.price-slide .price-bx ul li:last-child{
+    padding-bottom: 0;
+}
+.price-slide .price-bx ul li{
+    display: block;
+    color: var(--dark);
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 27px;
+    line-height: 23px;
+    padding-bottom: 10px;
+}
+.price-slide .price-bx ul li::before{
+    content: '';
+    background-image: url('../images/icon/done-black.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+}
+.price-slide .animate-p-bx{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15vh;
+}
+.price-slide .price-bx_2{
+ margin-top: 40vh;
+}
+.price-slide .price-bx_3{
+    margin-top: 60vh;
+   }
+   .price-slide .price-bx_4{
+    margin-top: 140vh;
+   }
 /*Pricing-Section====End*/
