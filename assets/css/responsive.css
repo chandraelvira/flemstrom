@@ -148,7 +148,7 @@
 
     }
     .price-slide .animate-p-bx {
-        top: 45vh;
+        top: 30vh;
     }
     .price-slide .rtl-text h2 span:nth-child(1) {
         transform: translateX(600px);

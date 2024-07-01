@@ -1417,3 +1417,9 @@ padding: 40px 20px;
     margin-top: 140vh;
    }
 /*Pricing-Section====End*/
+
+/*Tube-section====Start*/
+.tube-section{
+    background-color: var(--black);
+}
+/*Tube-section====End*/

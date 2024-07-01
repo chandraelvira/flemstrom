@@ -163,21 +163,6 @@ $(document).ready(function () {
 
 // About-page-animation
 
-// same-height
-
-// $(document).ready(function () {
-//   var highestBox = 0;
-//   $(".stage-card .slide-card").each(function () {
-//     if ($(this).height() > highestBox) {
-//       highestBox = $(this).height();
-//     }
-//   });
-//   $(".stage-card .slide-card").height(highestBox);
-// });
-// same-height
-
-
-
 $(document).ready(function () {
   let lastScrollTop = 0;
   $(window).on('scroll', function () {
@@ -198,3 +183,24 @@ $(document).ready(function () {
       lastScrollTop = currentScrollTop;
   });
 });
+
+
+// Youtube-player=Start
+var player;
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('youtube-video', {
+        events: {
+            'onReady': onPlayerReady
+        }
+    });
+}
+
+function onPlayerReady(event) {
+    $('#play-button').on('click', function() {
+        player.playVideo();
+        $(this).hide();
+    });
+}
+
+// Youtube-player=End
