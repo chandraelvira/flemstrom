@@ -206,10 +206,11 @@ header .nav-list li:nth-child(6) a {
     transform: translateY(-100%);
     animation: listchildOne 0.5s ease-out 1.5s 1 forwards;
 } */
-header .nav-list li  a {
+header .nav-list li a {
     transform: translateY(-100%);
     animation: listchildOne 0.5s ease-out 1.5s 1 forwards;
 }
+
 @keyframes listchildOne {
     0% {
         transform: translateY(-100%);
@@ -1269,6 +1270,19 @@ footer .contact {
     padding-top: 76px;
 }
 
+.sm-banner .bld-txt {
+    max-width: 640px;
+    margin-left: auto;
+    width: 100%;
+}
+
+.sm-banner .bld-txt strong {
+    color: var(--dark);
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Anton", sans-serif;
+}
+
 .sm-banner .h-container {
     overflow: hidden;
     padding: 70px 0;
@@ -1281,15 +1295,18 @@ footer .contact {
     display: inline-block;
     text-transform: uppercase;
 }
+
 .sm-banner h1 span {
     color: rgba(0, 0, 0, 0);
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: var(--black);
     transition: text-shadow .3s;
 }
+
 .sm-banner h1 span:hover {
     text-shadow: 4px 4px #000;
 }
+
 .sm-banner p {
     max-width: 786px;
     font-size: 20px;
@@ -1531,21 +1548,23 @@ footer .contact {
 
 
 /* Contact-us===Start*/
-.contact-us-frm{
+.contact-us-frm {
     border: 2px solid #0D1220;
     padding: 10px 15px;
     max-width: 700px;
     margin: 30px auto 0;
 }
-.contact-us-frm label{
+
+.contact-us-frm label {
     display: block;
     font-size: 22px;
     font-weight: 600;
     color: var(--dark);
 }
+
 .contact-us-frm input[type=text],
 .contact-us-frm input[type=email],
-.contact-us-frm textarea{
+.contact-us-frm textarea {
     width: 100%;
     background-color: transparent;
     outline: 0;
@@ -1559,28 +1578,68 @@ footer .contact {
 }
 
 
-.short-conversation{
+.short-conversation {
     background-color: var(--black);
 }
-.short-conversation .contact-bx{
+
+.short-conversation .contact-bx {
     border: 1px solid var(--theme-color);
     padding: 25px 40px;
     transition: all 0.5s ease-in;
 }
-.short-conversation .contact-bx:hover{
+
+.short-conversation .contact-bx:hover {
     transform: translateY(-10px);
 }
-.short-conversation  .txt_content{
+
+.short-conversation .txt_content {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.short-conversation  .txt_content span{
-color: #fff;
-font-size: 24px;
-font-weight: 500;
+
+.short-conversation .txt_content span {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
 }
-.short-conversation  .txt_content img{
+
+.short-conversation .txt_content img {
     max-width: 26px;
 }
+
 /* Contact-us===End*/
+
+/* Blog-section===Start*/
+.blog-section{
+    background-color: var(--black);
+}
+.blog-section .blog-bx figure{
+overflow: hidden;
+position: relative;
+}
+.blog-section .blog-bx figure img{
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    height: auto;
+}
+.blog-section .blog-bx:hover img{
+    transform: scale(1.1);
+}
+.blog-section .blog-bx span{
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--theme-color);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 15px;
+}
+.blog-section .blog-bx h6{
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+/* Blog-section===End*/

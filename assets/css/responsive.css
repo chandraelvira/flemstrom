@@ -342,4 +342,7 @@
     .short-conversation .txt_content img {
         max-width: 18px;
     }
+    .sm-banner .bld-txt strong {
+        font-size: 18px;
+    }
 }
