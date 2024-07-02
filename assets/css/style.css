@@ -329,6 +329,7 @@ header .humburger.menu-open .icon {
     font-family: "Anton", sans-serif;
     font-size: 160px;
     line-height: 240px;
+    text-transform: uppercase;
 }
 
 .banner .heading {
@@ -650,7 +651,7 @@ h2 .subtilehover:hover {
 
 /* parallax-box=====start*/
 .parallax-box-sec {
-    background-color: #0D1220;
+    background-color: var(--black);
 }
 
 .parallax-box-sec h2 {
@@ -725,7 +726,22 @@ h2 .subtilehover:hover {
 .parallax-box-sec .parallax-item.p-bx-three {
     background-color: var(--theme-color);
 }
-
+.parallax-box-sec .btn_txt-wrap{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 30px;
+flex-wrap: wrap;
+gap: 10px 0;
+}
+.parallax-box-sec .btn_txt-wrap small{
+    color: var(--theme-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    max-width: 440px;
+    width: 100%;
+}
 /* parallax-box=====end*/
 
 /* faq-section=====start*/

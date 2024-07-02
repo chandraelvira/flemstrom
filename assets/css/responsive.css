@@ -47,8 +47,10 @@
 
 @media only screen and (max-width: 1400px) {
     .about-us-header.banner h1 {
-        font-size: 130px;
-        line-height: 155px;
+        /* font-size: 130px;
+        line-height: 155px; */
+        font-size: 100px;
+        line-height: 125px;
     }
 
     .price-slide h2 {
