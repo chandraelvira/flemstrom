@@ -163,11 +163,12 @@ header .nav-list li a {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
     font-family: "Anton", sans-serif;
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 400;
     line-height: 90px;
     transition: text-shadow, transform .3s;
     display: block;
+    text-transform: uppercase;
 }
 
 header .nav-list li a:hover {
