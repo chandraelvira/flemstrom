@@ -1278,8 +1278,17 @@ footer .contact {
     font-size: 100px;
     line-height: 124px;
     display: inline-block;
+    text-transform: uppercase;
 }
-
+.sm-banner h1 span {
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--black);
+    transition: text-shadow .3s;
+}
+.sm-banner h1 span:hover {
+    text-shadow: 4px 4px #000;
+}
 .sm-banner p {
     max-width: 786px;
     font-size: 20px;
