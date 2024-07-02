@@ -1276,7 +1276,7 @@ footer .contact {
     width: 100%;
 }
 
-.sm-banner .bld-txt strong {
+.sm-banner  strong {
     color: var(--dark);
     font-size: 40px;
     font-weight: 400;
@@ -1611,22 +1611,26 @@ footer .contact {
 /* Contact-us===End*/
 
 /* Blog-section===Start*/
-.blog-section{
+.blog-section {
     background-color: var(--black);
 }
-.blog-section .blog-bx figure{
-overflow: hidden;
-position: relative;
+
+.blog-section .blog-bx figure {
+    overflow: hidden;
+    position: relative;
 }
-.blog-section .blog-bx figure img{
+
+.blog-section .blog-bx figure img {
     transition: all 0.5s ease-in-out;
     width: 100%;
     height: auto;
 }
-.blog-section .blog-bx:hover img{
+
+.blog-section .blog-bx:hover img {
     transform: scale(1.1);
 }
-.blog-section .blog-bx span{
+
+.blog-section .blog-bx span {
     color: var(--dark);
     font-size: 18px;
     font-weight: 700;
@@ -1636,10 +1640,83 @@ position: relative;
     left: 20px;
     padding: 8px 15px;
 }
-.blog-section .blog-bx h6{
+
+.blog-section .blog-bx h6 {
     color: #fff;
     font-weight: 500;
     font-size: 22px;
     text-transform: uppercase;
 }
+
 /* Blog-section===End*/
+
+/* Blog-details===Start*/
+.blog-details {
+    background-color: var(--black);
+}
+
+.blog-details .details-img img {
+    width: 100%;
+    height: auto;
+    margin-top: -170px;
+    position: relative;
+    z-index: 1;
+}
+
+.blog-details p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.blog-details h3 {
+    color: var(--theme-color);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.blog-details ul li {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.blog-details ul li:last-child {
+    padding-bottom: 0;
+}
+
+.blog-details ul li::before {
+    content: '';
+    background-image: url('../images/icon/graterthen-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.b-det-heading .h-one{
+    max-width: 950px;
+    width: 100%;
+}
+.b-det-heading .h-txt-wrap{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 40px 0;
+}
+.b-det-heading .h-txt-wrap span{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--dark);
+}
+/* Blog-details===End*/
