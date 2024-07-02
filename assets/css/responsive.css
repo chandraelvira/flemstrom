@@ -1,5 +1,6 @@
 @media only screen and (min-width: 1400px) {
-    .banner h1 {
+    .banner h1,
+    .sm-banner h1 {
         font-size: 160px;
         line-height: 240px;
     }
@@ -81,7 +82,8 @@
 
     }
 
-    .banner h1 {
+    .banner h1,
+    .sm-banner h1 {
         font-size: 65px;
         line-height: 78px;
     }
@@ -199,7 +201,8 @@
         gap: 30px 0;
     }
 
-    .banner h1 {
+    .banner h1,
+    .sm-banner h1 {
         font-size: 34px;
         line-height: 44px;
     }
@@ -332,5 +335,11 @@
     .vid-sec-btm-bx strong {
         font-size: 22px;
         line-height: 46px;
+    }
+    .short-conversation .txt_content span {
+        font-size: 18px;
+    }
+    .short-conversation .txt_content img {
+        max-width: 18px;
     }
 }

@@ -163,9 +163,13 @@ $(document).ready(function () {
 
 // About-page-animation
 
+
+    
+
+
 $(document).ready(function () {
   let lastScrollTop = 0;
-    $('body').on('scroll', '.anything', function() {
+  $(window).on('scroll', function () {
       let currentScrollTop = $(this).scrollTop();
       let section2 = $('#price-slide-animation');
       let sectionOffset = section2.offset().top;
@@ -174,14 +178,11 @@ $(document).ready(function () {
       if (currentScrollTop >= sectionOffset && currentScrollTop < sectionOffset + sectionHeight) {
           if (currentScrollTop > lastScrollTop) {
               section2.find('.rtl-text').addClass('rtl-animation');
-           
           } else {
               section2.find('.rtl-text').removeClass('rtl-animation');
-          
           }
       } else {
           section2.find('.rtl-text').removeClass('rtl-animation');
-        
       }
       lastScrollTop = currentScrollTop;
   });
