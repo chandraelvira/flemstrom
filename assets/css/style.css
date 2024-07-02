@@ -177,7 +177,7 @@ header .nav-list li a:hover {
     text-shadow: 4px 4px 0 #fff;
 }
 
-header .nav-list li:nth-child(1) a {
+/* header .nav-list li:nth-child(1) a {
     transform: translateY(-100%);
     animation: listchildOne 0.5s ease-out 1.4s 1 forwards;
 }
@@ -201,7 +201,14 @@ header .nav-list li:nth-child(5) a {
     transform: translateY(-100%);
     animation: listchildOne 0.5s ease-out 1.5s 1 forwards;
 }
-
+header .nav-list li:nth-child(6) a {
+    transform: translateY(-100%);
+    animation: listchildOne 0.5s ease-out 1.5s 1 forwards;
+} */
+header .nav-list li  a {
+    transform: translateY(-100%);
+    animation: listchildOne 0.5s ease-out 1.5s 1 forwards;
+}
 @keyframes listchildOne {
     0% {
         transform: translateY(-100%);
@@ -241,6 +248,7 @@ header .humburger.menu-open .icon {
 
 header .nav-list li {
     overflow: hidden;
+    padding: 0 8px;
 }
 
 header .nav-list:before {
@@ -1096,8 +1104,8 @@ footer .contact {
 
 .vid-sec-btm-bx {
     background-color: var(--theme-color);
-    padding: 0 30px;
-    height: 450px;
+    padding: 20px 30px;
+    min-height: 450px;
     display: flex;
     align-items: center;
     margin-top: -210px;
@@ -1283,12 +1291,14 @@ footer .contact {
 .price-slide {
     background-color: var(--black);
 }
-.price-slide .rtl-text_1{
+
+.price-slide .rtl-text_1 {
     position: -webkit-sticky;
     position: sticky;
     top: 15vh;
     overflow: hidden;
 }
+
 .price-slide h2 {
     color: rgba(0, 0, 0, 0);
     -webkit-text-stroke-width: 2px;
@@ -1308,39 +1318,47 @@ footer .contact {
     transform: translateX(300px);
     transition: transform 0.6s ease-out;
 }
+
 .price-slide .rtl-text h2 span:nth-child(2) {
     transform: translateX(300px);
     transition: transform 0.5s ease-out;
 }
+
 .price-slide .rtl-text h2 span:nth-child(3) {
     transform: translateX(300px);
     transition: transform 0.4s ease-out;
 }
+
 .price-slide .rtl-text h2 span:nth-child(4) {
     transform: translateX(300px);
     transition: transform 0.3s ease-out;
 }
+
 .price-slide .rtl-text h2 span:nth-child(5) {
     transform: translateX(300px);
     transition: transform 0.2s ease-out;
 }
+
 .price-slide .rtl-text h2 span:nth-child(6) {
     transform: translateX(300px);
     transition: transform 0.1s ease-in;
 }
-.price-slide .rtl-text.rtl-animation h2 span{
+
+.price-slide .rtl-text.rtl-animation h2 span {
     transform: none;
 }
 
 .price-slide h2:hover {
     text-shadow: 4px 4px var(--theme-color);
 }
-.price-slide .price-bx{
-background-color: var(--theme-color);
-color: var(--black);
-padding: 40px 20px;
+
+.price-slide .price-bx {
+    background-color: var(--theme-color);
+    color: var(--black);
+    padding: 40px 20px;
 }
-.price-slide .price-bx span{
+
+.price-slide .price-bx span {
     margin-left: auto;
     display: table;
     font-size: 16px;
@@ -1350,7 +1368,8 @@ padding: 40px 20px;
     background-color: var(--black);
     padding: 8px 20px
 }
-.price-slide .price-bx strong{
+
+.price-slide .price-bx strong {
     display: block;
     font-family: "Anton", sans-serif;
     font-size: 24px;
@@ -1358,14 +1377,16 @@ padding: 40px 20px;
     line-height: 36px;
     margin-bottom: 10px;
 }
-.price-slide .price-bx h5{
+
+.price-slide .price-bx h5 {
     display: block;
     font-family: "Anton", sans-serif;
     font-size: 40px;
     font-weight: 400;
     line-height: 60px;
 }
-.price-slide .price-bx h6{
+
+.price-slide .price-bx h6 {
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
@@ -1374,13 +1395,16 @@ padding: 40px 20px;
     padding: 10px;
     text-transform: uppercase;
 }
-.price-slide .price-bx ul{
-    margin : 20px 0;
+
+.price-slide .price-bx ul {
+    margin: 20px 0;
 }
-.price-slide .price-bx ul li:last-child{
+
+.price-slide .price-bx ul li:last-child {
     padding-bottom: 0;
 }
-.price-slide .price-bx ul li{
+
+.price-slide .price-bx ul li {
     display: block;
     color: var(--dark);
     font-size: 16px;
@@ -1390,7 +1414,8 @@ padding: 40px 20px;
     line-height: 23px;
     padding-bottom: 10px;
 }
-.price-slide .price-bx ul li::before{
+
+.price-slide .price-bx ul li::before {
     content: '';
     background-image: url('../images/icon/done-black.svg');
     background-repeat: no-repeat;
@@ -1402,53 +1427,94 @@ padding: 40px 20px;
     width: 16px;
     height: 16px;
 }
-.price-slide .animate-p-bx{
+
+.price-slide .animate-p-bx {
     position: -webkit-sticky;
     position: sticky;
     top: 15vh;
 }
-.price-slide .price-bx_2{
- margin-top: 40vh;
+
+.price-slide .price-bx_2 {
+    margin-top: 40vh;
 }
-.price-slide .price-bx_3{
+
+.price-slide .price-bx_3 {
     margin-top: 60vh;
-   }
-   .price-slide .price-bx_4{
+}
+
+.price-slide .price-bx_4 {
     margin-top: 140vh;
-   }
+}
+
 /*Pricing-Section====End*/
 
 /*Tube-section====Start*/
-.tube-section{
+.tube-section {
     background-color: var(--black);
 }
-.tube-section .tube-bx{
-background-color: var(--theme-color);
-padding: 15px;
+
+.tube-section .tube-bx {
+    background-color: var(--theme-color);
+    padding: 15px;
 }
-.tube-section .tube-bx h6{
+
+.tube-section .tube-bx h6 {
     font-family: "Anton", sans-serif;
     font-size: 24px;
     font-weight: 400;
     color: var(--dark);
     margin: 10px 0;
 }
-.tube-section .tube-bx p{
+
+.tube-section .tube-bx p {
     color: var(--dark);
     font-size: 16px;
     font-weight: 500;
     line-height: 28px;
 }
 
-.tube-bx_animate{
+.tube-bx_animate {
     position: -webkit-sticky;
     position: sticky;
     top: 15vh;
 }
-.tube-section  .tube-bx_ani-2 {
+
+.tube-section .tube-bx_ani-2 {
     margin-top: 40vh;
 }
+
 .tube-section .tube-bx_ani-3 {
     margin-top: 80vh;
 }
+
+.youtube-link {
+    text-align: center;
+    display: flex;
+    animation: c;
+    justify-content: center;
+    margin: 30px 0 20px;
+}
+
+.youtube-link span {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.youtube-link span img {
+    max-width: 53px;
+    margin-right: 10px;
+}
+
+.youtube-link a {
+    line-height: 40px;
+}
+
+.youtube-link a img {
+    max-width: 20px;
+    margin-left: 10px;
+}
+
 /*Tube-section====End*/
