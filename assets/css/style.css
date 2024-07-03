@@ -253,7 +253,7 @@ header .nav-list li {
     padding: 0 8px;
 }
 
-header .nav-list:before {
+/* header .nav-list:before {
     content: '';
     background-color: black;
     width: 100%;
@@ -263,9 +263,9 @@ header .nav-list:before {
     left: 0;
     transform: translateY(-50%);
     transition: all 1.5s ease-in;
-}
+} */
 
-header .menu-open .nav-list:before {
+/* header .menu-open .nav-list:before {
     height: 0%;
     animation-name: beforeBg;
     animation-duration: 1.5s;
@@ -273,11 +273,9 @@ header .menu-open .nav-list:before {
     animation-delay: 0.2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+} */
 
-
-}
-
-@keyframes beforeBg {
+/* @keyframes beforeBg {
     0% {
         height: 0%;
 
@@ -294,7 +292,68 @@ header .menu-open .nav-list:before {
     100% {
         height: 100%;
     }
+} */
+
+/* New-nav-list-bg-start*/
+
+.open-bg_Wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
 }
+
+.open-bg_Wrap .open-bg_overlay {
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+
+.open-bg_Wrap .open-bg_top {
+    background-color: var(--black);
+    width: 100%;
+    height: 0%;
+    bottom: 0;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.open-bg_Wrap .open-bg_btm {
+    background-color: var(--black);
+    width: 100%;
+    height: 0%;
+    top: 0;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.menu-open .open-bg_Wrap .open-bg_btm,
+.menu-open .open-bg_Wrap .open-bg_top{
+animation: headeranimation 0.8s ease-in forwards;
+}
+
+@keyframes headeranimation{
+   0%{
+    height: 20%;
+   } 
+   50%{
+    height: 50%;
+   } 
+   100%{
+    height: 100%;
+   } 
+}
+
+
+
+/* New-nav-list-bg-end */
+
 
 /* Navbar*/
 header .humburger.menu-open .icon {
@@ -399,8 +458,9 @@ header .humburger.menu-open .icon {
 
 .alternate-btn:hover::before {
     width: 100%;
-    animation: bounceBackgroundtwo 0.5s ease-in-out forwards;
+    animation: bounceBackgroundtwo 0.5s ease-in-out;
 }
+
 
 @keyframes bounceBackgroundtwo {
     0% {
@@ -726,15 +786,17 @@ h2 .subtilehover:hover {
 .parallax-box-sec .parallax-item.p-bx-three {
     background-color: var(--theme-color);
 }
-.parallax-box-sec .btn_txt-wrap{
-display: flex;
-align-items: center;
-justify-content: space-between;
-margin-bottom: 30px;
-flex-wrap: wrap;
-gap: 10px 0;
+
+.parallax-box-sec .btn_txt-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 10px 0;
 }
-.parallax-box-sec .btn_txt-wrap small{
+
+.parallax-box-sec .btn_txt-wrap small {
     color: var(--theme-color);
     font-size: 16px;
     font-weight: 600;
@@ -742,6 +804,7 @@ gap: 10px 0;
     max-width: 440px;
     width: 100%;
 }
+
 /* parallax-box=====end*/
 
 /* faq-section=====start*/
@@ -1292,7 +1355,7 @@ footer .contact {
     width: 100%;
 }
 
-.sm-banner  strong {
+.sm-banner strong {
     color: var(--dark);
     font-size: 40px;
     font-weight: 400;
@@ -1720,19 +1783,22 @@ footer .contact {
     height: 20px;
 }
 
-.b-det-heading .h-one{
+.b-det-heading .h-one {
     max-width: 950px;
     width: 100%;
 }
-.b-det-heading .h-txt-wrap{
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 40px 0;
+
+.b-det-heading .h-txt-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
 }
-.b-det-heading .h-txt-wrap span{
+
+.b-det-heading .h-txt-wrap span {
     font-size: 20px;
     font-weight: 500;
     color: var(--dark);
 }
+
 /* Blog-details===End*/
