@@ -460,7 +460,7 @@ header .humburger.menu-open .icon {
 
 .animate-btn:hover::before {
     width: 100%;
-    animation: bounceBackground 0.5s ease-in-out forwards;
+    animation: bounceBackground 0.5s ease-in-out;
 }
 
 @keyframes bounceBackground {
